@@ -1,0 +1,5 @@
+# Scratch directory for transient files (e.g. notes)
+.scratch
+
+# Claude
+**/.claude/settings.local.json
