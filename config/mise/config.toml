@@ -1,0 +1,5 @@
+[settings]
+color = false
+gpg_verify = true
+install_before = "7d" # dependency cooldown (unless specific version specified)
+paranoid = true
