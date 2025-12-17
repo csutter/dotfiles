@@ -1,0 +1,26 @@
+theme = "github_dark_custom"
+
+[editor]
+bufferline = "multiple"
+color-modes = true
+cursorline = true
+rulers = [100]
+text-width = 100
+trim-final-newlines = true
+trim-trailing-whitespace = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+[editor.gutters.line-numbers]
+min-width = 3
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
