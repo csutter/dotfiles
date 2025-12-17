@@ -1,6 +1,7 @@
 theme = "github_dark_custom"
 
 [editor]
+auto-format = true
 bufferline = "multiple"
 color-modes = true
 cursorline = true
