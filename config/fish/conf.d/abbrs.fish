@@ -2,6 +2,7 @@
 abbr --add --global g git
 abbr --add --global ga "git add"
 abbr --add --global gb "git branch"
+abbr --add --global gca "git commit --amend"
 abbr --add --global gcm "git commit -m"
 abbr --add --global gco "git checkout"
 abbr --add --global gd "git diff"
