@@ -1,7 +1,7 @@
 # Global fish configuration
 ## Editors
-set -gx EDITOR hx
-set -gx VISUAL hx
+set -gx EDITOR code --wait
+set -gx VISUAL code --wait
 
 # No welcome message
 set -g fish_greeting
