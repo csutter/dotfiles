@@ -21,7 +21,7 @@
   format = ssh
 [merge]
   ff = only
-  conflictstyle = diff3
+  conflictstyle = zdiff3
 [color]
   ui = true
 [push]
@@ -33,5 +33,12 @@
   autostash = true
 [core]
   autocrlf = input
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  hyperlinks = true
+  line-numbers = true
 [init]
   defaultBranch = main
