@@ -3,3 +3,6 @@
 
 # Claude
 **/.claude/settings.local.json
+
+# macOS stray files
+.DS_Store
