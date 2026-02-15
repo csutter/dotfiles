@@ -5,7 +5,7 @@ window-padding-y = 4
 
 # Font
 font-family = PragmataPro VF
-font-size = 13
+font-size = 11
 font-feature = -calt, -liga, -dlig
 font-variation = wght=400
 font-variation-bold = wght=700
