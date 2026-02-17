@@ -25,3 +25,6 @@ set -g __fish_git_prompt_char_stagedstate '+'
 set -g __fish_git_prompt_char_dirtystate '*'
 set -g __fish_git_prompt_char_untrackedfiles '?'
 set -g __fish_git_prompt_char_stashstate '[S]'
+
+# Mise
+mise activate fish | source
