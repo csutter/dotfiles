@@ -2,7 +2,7 @@
 .scratch
 
 # Claude
-**/.claude/settings.local.json
+**/.claude/*.local.*
 
 # macOS stray files
 .DS_Store
