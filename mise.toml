@@ -1,4 +1,2 @@
 [tools]
-claude-code = "latest"
-github-cli = "latest"
 taplo = "latest"
