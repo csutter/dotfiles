@@ -3,6 +3,7 @@
 
 # Claude
 **/.claude/*.local.*
+CLAUDE.local.md
 
 # macOS stray files
 .DS_Store
