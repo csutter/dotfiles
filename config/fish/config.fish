@@ -26,5 +26,8 @@ set -g __fish_git_prompt_char_dirtystate '*'
 set -g __fish_git_prompt_char_untrackedfiles '?'
 set -g __fish_git_prompt_char_stashstate '[S]'
 
+# Path
+fish_add_path $HOME/.local/bin
+
 # Mise
 mise activate fish | source
