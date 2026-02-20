@@ -1,0 +1,4 @@
+# macOS-specific Ghostty configuration
+# Settings in this file take precedence over $XDG_CONFIG_HOME/ghostty/config.
+# see https://ghostty.org/docs/config
+font-size = 14

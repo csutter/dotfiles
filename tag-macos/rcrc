@@ -1,3 +1,4 @@
 EXCLUDES="README.md"
 TAGS="macos"
 DOTFILES_DIRS="~/src/csutter/dotfiles ~/src/csutter/dotfiles-private"
+UNDOTTED="Library"
