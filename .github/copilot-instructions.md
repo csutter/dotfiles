@@ -1,0 +1,42 @@
+# Dotfiles — Copilot Instructions
+
+## Overview
+
+This repo is managed by [RCM](https://github.com/thoughtbot/rcm), which symlinks files from this repo (and `dotfiles-private`) into `~`. Files live without a leading dot here; RCM adds it during install.
+
+## RCM Conventions
+
+- **File layout**: `bashrc` → `~/.bashrc`, `config/git/config` → `~/.config/git/config`, etc.
+- **Tags**: Files under `tag-<name>/` are only installed when that tag is active in `~/.rcrc`. Linux machines use the `linux-workstation` tag; macOS machines use `macos-workstation`.
+- **Two repos**: `~/src/csutter/dotfiles` (this, public) and `~/src/csutter/dotfiles-private` (non-public, for sensitive configuration). Both would normally be listed in `DOTFILES_DIRS` in `~/.rcrc` and RCM merges them transparently. Prefer `dotfiles-private` for sensitive configuration.
+- **`UNDOTTED`**: macOS `.rcrc` should set `UNDOTTED="Library"` so `Library/` installs as `~/Library/` (not `~/.Library/`).
+
+## Workflow for File Changes
+
+| Action | Steps |
+|---|---|
+| Add or rename a file | Run `rcup` after — the symlink won't exist until then |
+| Remove a file or old name (rename) | Manually delete the stale symlink from `~` (e.g. `rm ~/.oldfile`) |
+| Edit an existing symlinked file | Changes are live immediately — no `rcup` needed |
+
+Consult `~/.rcrc` to understand current tag/directory settings on a specific machine.
+
+## Structure
+
+```
+config/bash/      # Bash extras sourced by bashrc (aliases, prompt, fzf, completion)
+config/git/       # Git config and global ignore
+config/ghostty/   # Ghostty terminal config (Linux)
+tag-linux-workstation/   # Linux-only config (SSH agent, autostart)
+tag-macos-workstation/   # macOS-only config (Homebrew, SSH agent, Ghostty)
+```
+
+## Key Files
+
+- [config/bash/aliases.sh](../config/bash/aliases.sh) — shell aliases (git shortcuts, tools)
+- [config/git/config](../config/git/config) — git settings (delta pager, SSH signing, rebase)
+- [README.md](../README.md) — initial setup instructions for new machines
+
+## Maintenance
+
+When making structural changes to this repo (adding new tag directories, reorganising files, changing RCM settings, etc.), update this file to keep the information accurate.
