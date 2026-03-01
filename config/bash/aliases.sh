@@ -5,6 +5,7 @@ alias g='git'
 alias ga='git add'
 alias gb='git branch'
 alias gca='git commit --amend'
+alias gcaa='git commit --amend --no-edit'
 alias gcm='git commit -m'
 alias gco='git checkout'
 alias gd='git diff'
@@ -15,7 +16,7 @@ alias gu='git pull'
 alias gp='git push'
 
 # Tools
-alias d='docker'
+alias p='podman'
 alias tf='terraform'
 
 # Utilities
