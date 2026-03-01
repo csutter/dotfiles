@@ -1,4 +1,0 @@
-EXCLUDES="README.md"
-TAGS="workstation"
-DOTFILES_DIRS="~/src/csutter/dotfiles ~/src/csutter/dotfiles-private"
-
