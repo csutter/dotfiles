@@ -7,7 +7,7 @@ function fish_prompt
         printf '%s@%s ' "$USER" (prompt_hostname)
     end
 
-    set_color --bold white
+    set_color --bold brwhite
     printf '%s' (prompt_pwd)
 
     set -g __fish_git_prompt_show_informative_status 1
