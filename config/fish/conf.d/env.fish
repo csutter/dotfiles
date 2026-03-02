@@ -1,10 +1,9 @@
-# Core environment settings.
+# Suppress the built-in welcome message
+set -g fish_greeting ''
 
-# Environment variables
+# Set up editor
 set -gx EDITOR "code --wait"
 set -gx VISUAL "code --wait"
 
-# Keep user-local binaries first, matching prior Bash behavior.
-if not contains -- "$HOME/.local/bin" $PATH
-    set -gx PATH "$HOME/.local/bin" $PATH
-end
+# Set up local tools folder
+fish_add_path $HOME/.local/bin

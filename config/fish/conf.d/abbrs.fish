@@ -1,7 +1,4 @@
-# Use abbreviations (abbr) instead of aliases.
-# Define them as global (session-scoped) to keep config declarative and avoid
-# unexpected universal-variable persistence interactions.
-
+# Set up abbreviations for interactive use
 if status is-interactive
     abbr --add --global g 'git'
     abbr --add --global ga 'git add'

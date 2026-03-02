@@ -1,7 +1,3 @@
-# macOS Homebrew setup
-
-if not contains -- /opt/homebrew/bin $PATH
-    set -gx PATH /opt/homebrew/bin $PATH
-end
-
+# Set up Homebrew
 set -gx HOMEBREW_NO_ANALYTICS 1
+fish_add_path --prepend /opt/homebrew/bin
