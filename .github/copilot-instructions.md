@@ -7,9 +7,8 @@ This repo is managed by [RCM](https://github.com/thoughtbot/rcm), which symlinks
 ## RCM Conventions
 
 - **File layout**: `bashrc` → `~/.bashrc`, `config/git/config` → `~/.config/git/config`, etc.
-- **Tags**: Files under `tag-<name>/` are only installed when that tag is active in `~/.rcrc`. Linux machines use the `linux-workstation` tag; macOS machines use `macos-workstation`.
+- **Tags**: Files under `tag-<name>/` are only installed when that tag is active in `~/.rcrc`. macOS machines use the `mac` tag.
 - **Two repos**: `~/src/csutter/dotfiles` (this, public) and `~/src/csutter/dotfiles-private` (non-public, for sensitive configuration). Both would normally be listed in `DOTFILES_DIRS` in `~/.rcrc` and RCM merges them transparently. Prefer `dotfiles-private` for sensitive configuration.
-- **`UNDOTTED`**: macOS `.rcrc` should set `UNDOTTED="Library"` so `Library/` installs as `~/Library/` (not `~/.Library/`).
 
 ## Workflow for File Changes
 
@@ -26,9 +25,7 @@ Consult `~/.rcrc` to understand current tag/directory settings on a specific mac
 ```
 config/bash/      # Bash extras sourced by bashrc (aliases, prompt, fzf, completion)
 config/git/       # Git config and global ignore
-config/ghostty/   # Ghostty terminal config (Linux)
-tag-linux-workstation/   # Linux-only config (SSH agent, autostart)
-tag-macos-workstation/   # macOS-only config (Homebrew, SSH agent, Ghostty)
+tag-mac/          # macOS-only config (Homebrew, SSH agent, Ghostty)
 ```
 
 ## Key Files
