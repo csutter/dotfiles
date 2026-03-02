@@ -1,0 +1,3 @@
+EXCLUDES="README.md"
+TAGS="mac"
+DOTFILES_DIRS="~/src/csutter/dotfiles ~/src/csutter/dotfiles-private"

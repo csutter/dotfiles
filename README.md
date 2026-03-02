@@ -2,13 +2,10 @@
 My new and improved system configuration for macOS and Linux
 
 ## Initial configuration
-Create a `~/.rcrc` with the appropriate contents, for example:
 
 ### macOS
+Ensure `rcm` is installed, and fish set as the user shell.
 ```bash
-EXCLUDES="README.md"
-TAGS="mac"
-DOTFILES_DIRS="~/src/csutter/dotfiles ~/src/csutter/dotfiles-private"
+fish_add_path -g "/opt/homebrew/bin"
+RCRC=~/src/csutter/dotfiles/tag-mac/rcrc rcup -vf
 ```
-
-Run `rcup -vf` to install.
