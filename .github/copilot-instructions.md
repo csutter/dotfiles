@@ -23,14 +23,14 @@ Consult `~/.rcrc` to understand current tag/directory settings on a specific mac
 ## Structure
 
 ```
-config/bash/      # Bash extras sourced by bashrc (aliases, prompt, fzf, completion)
+config/fish/      # Fish conf.d snippets (env, abbr)
 config/git/       # Git config and global ignore
-tag-mac/          # macOS-only config (Homebrew, SSH agent, Ghostty)
+tag-mac/          # macOS-only config (Homebrew, SSH agent, Ghostty, Fish overrides)
 ```
 
 ## Key Files
 
-- [config/bash/aliases.sh](../config/bash/aliases.sh) — shell aliases (git shortcuts, tools)
+- [config/fish/conf.d/env.fish](../config/fish/conf.d/env.fish) — core Fish environment settings
 - [config/git/config](../config/git/config) — git settings (delta pager, SSH signing, rebase)
 - [README.md](../README.md) — initial setup instructions for new machines
 
