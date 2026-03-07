@@ -1,5 +1,0 @@
-# git config is automatically set up for devcontainers, so exclude it from management
-EXCLUDES="*.md config/git/config"
-TAGS="devcontainer"
-# see https://github.com/csutter/devcontainer-features/blob/main/src/personal-setup
-DOTFILES_DIRS="/mnt/dotfiles /mnt/dotfiles-private"
