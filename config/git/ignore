@@ -5,5 +5,8 @@
 **/.claude/*.local.*
 CLAUDE.local.md
 
+# Mise local config
+mise.local.toml
+
 # macOS stray files
 .DS_Store
