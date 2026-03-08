@@ -1,7 +1,8 @@
 background = 121619
 foreground = f2f4f8
 cursor-color = c1c7cd
-selection-background = 343a3f
+selection-background = 003a6d
+selection-foreground = ffffff
 
 palette = 0=3b3b3b
 palette = 1=fa4d56
