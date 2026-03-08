@@ -13,6 +13,7 @@ if status is-interactive
     abbr --add --global gst 'git status'
     abbr --add --global gu 'git pull'
     abbr --add --global gp 'git push'
+    abbr --add --global grs 'git-resign'
 
     abbr --add --global d 'docker'
     abbr --add --global tf 'terraform'
