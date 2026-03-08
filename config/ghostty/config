@@ -1,5 +1,5 @@
 # UI
-theme = geist
+theme = carbon
 window-padding-x = 6
 window-padding-y = 6
 
@@ -9,4 +9,4 @@ font-size = 14.5
 font-feature = -calt, -liga, -dlig
 font-variation = wght=450
 font-variation-bold = wght=750
-adjust-cell-height = 35%
+adjust-cell-height = 30%

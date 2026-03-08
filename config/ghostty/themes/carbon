@@ -1,0 +1,23 @@
+# Based on IBM's Carbon Design System colours
+# see https://carbondesignsystem.com/data-visualization/color-palettes/
+palette = 0=#697077
+palette = 1=#ffb3b8
+palette = 2=#6fdc8c
+palette = 3=#f1c21b
+palette = 4=#a6c8ff
+palette = 5=#ffafd2
+palette = 6=#82cfff
+palette = 7=#f2f4f8
+palette = 8=#a2a9b0
+palette = 9=#ffd7d9
+palette = 10=#a7f0ba
+palette = 11=#fddc69
+palette = 12=#d0e2ff
+palette = 13=#ffd6e8
+palette = 14=#bae6ff
+palette = 15=#ffffff
+background = #121619
+foreground = #f2f4f8
+cursor-color = #f2f4f8
+selection-background = #f2f4f8
+selection-foreground = #121619
