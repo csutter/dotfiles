@@ -4,9 +4,9 @@ window-padding-x = 6
 window-padding-y = 6
 
 # Font
-font-family = JetBrains Mono
-font-size = 12.5
+font-family = PragmataPro VF
+font-size = 14
 font-feature = -calt, -liga, -dlig
 font-variation = wght=500
 font-variation-bold = wght=750
-adjust-cell-height = 20%
+adjust-cell-height = 30%
