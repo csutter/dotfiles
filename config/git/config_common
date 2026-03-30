@@ -1,0 +1,66 @@
+# Common Git configuration across all my hosts
+#
+# I have slightly different Git configuration needs for different hosts (e.g. work and personal),
+# especially when it comes to signing keys and email addresses. Normally, I would have small
+# includes files with the host-specific configuration, but this causes issues with devcontainers,
+# which are a key part of my workflow, where I can't easily set host-specific tags.
+#
+# Instead, I leverage the fact that VS Code copies (not mounts) the primary git config file from
+# `~/.config/git/config` into the container, and invert the flow: common configuration is in an
+# includes files (this one), included in stub primary config files in `host-XXX` tags that otherwise
+# just contain host-specific configuration.
+
+[user]
+  email = git@doublesignal.com
+  name = Christian Sutter
+  # signingKey = [in per-host tags in private dotfiles]
+
+[alias]
+  a = add
+  b = branch
+  co = checkout
+  cm = commit -m
+  d = diff
+  ds = diff --staged
+  l = log --format=oneline
+  ll = log --format=medium
+  prn = remote prune origin
+  p = push
+  s = status
+  u = pull
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  allowedSignersFile = ~/.config/git/allowedsigners
+
+[merge]
+  ff = only
+  conflictstyle = zdiff3
+
+[color]
+  ui = true
+
+[push]
+  default = simple
+  autoSetupRemote = true
+
+[pull]
+  rebase = true
+
+[rebase]
+  autostash = true
+
+[core]
+  autocrlf = input
+
+[init]
+  defaultBranch = main
+
+[include]
+  # Devcontainer-specific overrides (not present and ignored when not in a devcontainer)
+  path = "~/.config/git/config_devcontainer"
