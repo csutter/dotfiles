@@ -1,3 +1,0 @@
-EXCLUDES="README.md"
-DOTFILES_DIRS="/mnt/dotfiles /mnt/dotfiles-private"
-TAGS="devcontainer"
