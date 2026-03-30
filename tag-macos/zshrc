@@ -1,0 +1,20 @@
+# Environment
+export EDITOR="code --wait"
+export VISUAL="code --wait"
+export HOMEBREW_NO_ANALYTICS=1
+export SSH_AUTH_SOCK="$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
+path=("$HOME/.docker/bin" /opt/homebrew/bin "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $path)
+
+# Prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+setopt prompt_subst
+
+zstyle ':vcs_info:git:*' enable git
+zstyle ':vcs_info:git:*' formats ' (%b)'
+
+PROMPT='%n@%m %B%~%b${vcs_info_msg_0_}%# '
+
+# Completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

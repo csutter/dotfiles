@@ -1,0 +1,3 @@
+brew "fd"
+brew "rcm"
+brew "tree"

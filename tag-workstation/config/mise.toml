@@ -1,9 +1,0 @@
-[settings]
-install_before = "5d"
-lockfile = true
-npm.package_manager = "bun"
-paranoid = true
-trusted_config_paths = [
-  '~/src/csutter',
-  '~/src/NHSDigital',
-]
