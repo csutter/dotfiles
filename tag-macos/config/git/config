@@ -1,7 +1,6 @@
 [user]
   email = git@doublesignal.com
   name = Christian Sutter
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFZCGaMvY2vFp972eZQPb33f3lnaQo3DS4w7G7zeLIR4
 [alias]
   a = add
   b = branch
@@ -47,4 +46,4 @@
 [include]
   # Includes work email overrides and signing key
   # Managed in rcm tags per device; see private dotfiles
-  path = "device_specific"
+  path = "~/.config/git/device_specific"
