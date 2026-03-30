@@ -24,6 +24,10 @@ zstyle ':vcs_info:git*+set-message:*' hooks untracked
 
 PROMPT='%n@%m %B%~%b${vcs_info_msg_0_}%# '
 
+# Colors
+export CLICOLOR=1
+export LSCOLORS="ExFxBxDxCxegedabagacad"
+
 # Completion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

@@ -4,11 +4,8 @@ window-padding-x = 6
 window-padding-y = 6
 
 # Font
-font-family = Berkeley Mono Variable
-font-size = 13.5
+font-family = PragmataPro VF
+font-size = 14.5
+font-variation = wght=400
 font-feature = -calt, -liga, -dlig
-font-variation = wght=500
-font-variation = wdth=80
-font-variation-bold = wght=750
-font-variation-bold = wdth=80
-adjust-cell-height = 24%
+adjust-cell-height = 25%
