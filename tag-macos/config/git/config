@@ -34,16 +34,11 @@
   autostash = true
 [core]
   autocrlf = input
-  pager = delta
-[interactive]
-  diffFilter = delta --color-only
-[delta]
-  navigate = true
-  hyperlinks = true
-  line-numbers = true
 [init]
   defaultBranch = main
 [include]
   # Includes work email overrides and signing key
   # Managed in rcm tags per device; see private dotfiles
   path = "~/.config/git/device_specific"
+  # Includes devcontainer-specific overrides (pager etc)
+  path = "~/.config/git/devcontainer"
