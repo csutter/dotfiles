@@ -11,7 +11,16 @@ precmd() { vcs_info }
 setopt prompt_subst
 
 zstyle ':vcs_info:git:*' enable git
-zstyle ':vcs_info:git:*' formats ' (%b)'
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr '%F{green}+%f'
+zstyle ':vcs_info:git:*' unstagedstr '%F{yellow}*%f'
+zstyle ':vcs_info:git:*' formats ' (%b%u%c%m)'
+zstyle ':vcs_info:git:*' actionformats ' (%b|%a%u%c%m)'
+zstyle ':vcs_info:git*+set-message:*' hooks untracked
+
++vi-untracked() {
+  [[ -n $(git ls-files --others --exclude-standard 2>/dev/null) ]] && hook_com[misc]+='%F{red}?%f'
+}
 
 PROMPT='%n@%m %B%~%b${vcs_info_msg_0_}%# '
 
