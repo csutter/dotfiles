@@ -6,9 +6,10 @@ My new and improved system configuration for macOS and Linux
 ### macOS
 Create an appropriate `rcm` configuration file at `~/.rcrc`, for example:
 ```bash
-DOTFILES_DIRS="~/src/csutter/dotfiles ~/src/csutter/dotfiles"
+DOTFILES_DIRS="~/src/csutter/dotfiles ~/src/csutter/dotfiles-private"
 EXCLUDES="README.md"
 TAGS="macos"
+HOSTNAME="set-to-device-name"
 ```
 
 Install [Homebrew][homebrew], then bootstrap local dependencies (including `rcm`) and set up
