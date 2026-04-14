@@ -10,6 +10,7 @@ if status is-interactive
     abbr --add --global gd 'git diff'
     abbr --add --global gds 'git diff --staged'
     abbr --add --global gl 'git log'
+    abbr --add --global glo 'git log --oneline'
     abbr --add --global gst 'git status'
     abbr --add --global gu 'git pull'
     abbr --add --global gp 'git push'
