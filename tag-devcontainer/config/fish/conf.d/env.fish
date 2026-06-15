@@ -7,3 +7,8 @@ set -gx VISUAL "code --wait"
 
 # Set up local tools folder
 fish_add_path $HOME/.local/bin
+
+# Set up mise (if installed)
+if command -q mise
+    mise activate fish | source
+end
